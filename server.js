@@ -14,10 +14,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // app.use(express.static(path.join(__dirname, '/public/dist')));
-app.use('/bookshop/', express.static(path.join(__dirname, '/public/dist')));
-app.get('/', (req, res) => {
-    res.redirect('/bookshop/');
-})
+app.use(express.static(path.join(__dirname, '/public')));
+
 
 app.get('/api/users', handlers.getUsersApi);
 
@@ -35,7 +33,7 @@ app.use((err, req, res, next) => {
     }
 });
 app.use((req, res) => {
-    res.send('404 Not Found')
+    res.redirect('/')
 });
 
 

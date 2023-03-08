@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://ilsur20002016:overkings10@cluster0.idjptvq.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://ilsur20002016:overkings10@cluster0.idjptvq.mongodb.net/BookShop?retryWrites=true&w=majority', { useNewUrlParser: true });
 
 const db = mongoose.connection;
 db.on('error', err => {
