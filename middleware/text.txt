@@ -1,0 +1,5 @@
+
+[object Object]
+  
+{"login":"asdasdad","pass":"asdasdasd","firstname":"qweqwe","secondname":"dasdasd"}
+  
